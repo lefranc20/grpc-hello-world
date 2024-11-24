@@ -11,7 +11,6 @@ import grpc.HelloWorldServiceProto.HelloResponse;
 
 // Implementação do servidor gRPC
 public class HelloWorldServiceImpl extends HelloWorldServiceGrpc.HelloWorldServiceImplBase {
-
     @Override
     public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
         String greeting = "Ola, " + request.getName();
